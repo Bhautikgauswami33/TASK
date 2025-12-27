@@ -1,0 +1,39 @@
+{
+  "critical_risks": [
+    {
+      "evidence_span": "like tightness",
+      "domain": "symptom",
+      "polarities_seen": [
+        "present",
+        "uncertain"
+      ],
+      "runs": [
+        "run1",
+        "run2",
+        "run3"
+      ],
+      "journal_id": "B002"
+    }
+  ],
+  "high_risks": [
+    {
+      "evidence_span": "but not sad",
+      "domain": "emotion",
+      "polarities_seen": [
+        "absent",
+        "present"
+      ],
+      "runs": [
+        "run1",
+        "run2",
+        "run3"
+      ],
+      "journal_id": "B004"
+    }
+  ],
+  "production_implications": {
+    "guardrail_design": "Implement polarity consistency check before output",
+    "cost": "Consider running 3+ times with voting for safety-critical extractions",
+    "scalability": "Cache stable outputs to reduce redundant LLM calls"
+  }
+}

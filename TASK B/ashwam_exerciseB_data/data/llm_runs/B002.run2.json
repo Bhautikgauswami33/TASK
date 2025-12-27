@@ -1,0 +1,51 @@
+{
+  "journal_id": "B002",
+  "run_id": "run2",
+  "items": [
+    {
+      "domain": "mind",
+      "text": "sleep disturbance at 3am",
+      "evidence_span": "3am ko uthi, phir 30 min tak aankh hi nahi lagi",
+      "polarity": "present",
+      "intensity_bucket": "medium",
+      "time_bucket": "last_night",
+      "confidence": 0.7
+    },
+    {
+      "domain": "food",
+      "text": "coffee; no breakfast",
+      "evidence_span": "coffee pi and skipped breakfast",
+      "polarity": "present",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.85
+    },
+    {
+      "domain": "emotion",
+      "text": "anxiety in chest",
+      "evidence_span": "Feeling anxious in chest",
+      "polarity": "present",
+      "arousal_bucket": "high",
+      "time_bucket": "today",
+      "confidence": 0.73
+    },
+    {
+      "domain": "symptom",
+      "text": "tightness in chest",
+      "evidence_span": "like tightness",
+      "polarity": "present",
+      "intensity_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.52
+    },
+    {
+      "domain": "symptom",
+      "text": "cramps absent",
+      "evidence_span": "No cramps today though",
+      "polarity": "absent",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.83
+    }
+  ]
+}

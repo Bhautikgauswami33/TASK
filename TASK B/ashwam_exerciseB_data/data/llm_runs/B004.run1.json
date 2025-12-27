@@ -1,0 +1,51 @@
+{
+  "journal_id": "B004",
+  "run_id": "run1",
+  "items": [
+    {
+      "domain": "food",
+      "text": "oats, banana, walnuts",
+      "evidence_span": "oats with banana and walnuts",
+      "polarity": "present",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.9
+    },
+    {
+      "domain": "symptom",
+      "text": "knee joint soreness (mild)",
+      "evidence_span": "mild joint soreness in my knees",
+      "polarity": "present",
+      "intensity_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.73
+    },
+    {
+      "domain": "mind",
+      "text": "rumination about work",
+      "evidence_span": "ruminating about work; couldn't stop replaying a conversation",
+      "polarity": "present",
+      "intensity_bucket": "high",
+      "time_bucket": "today",
+      "confidence": 0.7
+    },
+    {
+      "domain": "symptom",
+      "text": "low energy",
+      "evidence_span": "Felt low-energy",
+      "polarity": "present",
+      "intensity_bucket": "medium",
+      "time_bucket": "today",
+      "confidence": 0.66
+    },
+    {
+      "domain": "emotion",
+      "text": "not sad",
+      "evidence_span": "but not sad",
+      "polarity": "absent",
+      "arousal_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.61
+    }
+  ]
+}

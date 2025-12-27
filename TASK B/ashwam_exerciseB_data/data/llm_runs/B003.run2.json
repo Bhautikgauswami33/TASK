@@ -1,0 +1,42 @@
+{
+  "journal_id": "B003",
+  "run_id": "run2",
+  "items": [
+    {
+      "domain": "food",
+      "text": "dinner with paneer + rotis",
+      "evidence_span": "Dinner: paneer bhurji + 2 rotis",
+      "polarity": "present",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.89
+    },
+    {
+      "domain": "symptom",
+      "text": "sleepiness after dinner",
+      "evidence_span": "I got super sleepy",
+      "polarity": "present",
+      "intensity_bucket": "medium",
+      "time_bucket": "today",
+      "confidence": 0.55
+    },
+    {
+      "domain": "symptom",
+      "text": "bloated stomach",
+      "evidence_span": "stomach felt bloated",
+      "polarity": "present",
+      "intensity_bucket": "medium",
+      "time_bucket": "today",
+      "confidence": 0.62
+    },
+    {
+      "domain": "emotion",
+      "text": "good mood (calm)",
+      "evidence_span": "Mood was actually good—felt calm and grateful",
+      "polarity": "present",
+      "arousal_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.6
+    }
+  ]
+}

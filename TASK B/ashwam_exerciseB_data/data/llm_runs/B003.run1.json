@@ -1,0 +1,51 @@
+{
+  "journal_id": "B003",
+  "run_id": "run1",
+  "items": [
+    {
+      "domain": "food",
+      "text": "paneer bhurji + 2 rotis",
+      "evidence_span": "Dinner: paneer bhurji + 2 rotis",
+      "polarity": "present",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.93
+    },
+    {
+      "domain": "symptom",
+      "text": "very sleepy after eating",
+      "evidence_span": "I got super sleepy",
+      "polarity": "present",
+      "intensity_bucket": "high",
+      "time_bucket": "today",
+      "confidence": 0.77
+    },
+    {
+      "domain": "symptom",
+      "text": "bloating",
+      "evidence_span": "stomach felt bloated",
+      "polarity": "present",
+      "intensity_bucket": "medium",
+      "time_bucket": "today",
+      "confidence": 0.71
+    },
+    {
+      "domain": "emotion",
+      "text": "calm, grateful",
+      "evidence_span": "felt calm and grateful",
+      "polarity": "present",
+      "arousal_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.66
+    },
+    {
+      "domain": "mind",
+      "text": "clear focus",
+      "evidence_span": "Brain felt clear, focused while reading",
+      "polarity": "present",
+      "intensity_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.74
+    }
+  ]
+}

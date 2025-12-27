@@ -1,0 +1,145 @@
+{
+  "total_items_checked": 30,
+  "total_failures": 8,
+  "failure_rate": 0.2667,
+  "checks": {
+    "attribute_validity": {
+      "failures": 0,
+      "details": []
+    },
+    "evidence_validity": {
+      "failures": 7,
+      "details": [
+        {
+          "journal_id": "C003",
+          "error": "Hallucinated evidence_span: 'intrusive thoughts...' not in journal",
+          "item": {
+            "domain": "mind",
+            "text": "intrusive thoughts",
+            "evidence_span": "intrusive thoughts",
+            "polarity": "present",
+            "time_bucket": "today",
+            "intensity_bucket": "high",
+            "confidence": 0.55
+          }
+        },
+        {
+          "journal_id": "C004",
+          "error": "Hallucinated evidence_span: 'intrusive thoughts...' not in journal",
+          "item": {
+            "domain": "mind",
+            "text": "intrusive thoughts",
+            "evidence_span": "intrusive thoughts",
+            "polarity": "present",
+            "time_bucket": "today",
+            "intensity_bucket": "high",
+            "confidence": 0.55
+          }
+        },
+        {
+          "journal_id": "C007",
+          "error": "Hallucinated evidence_span: 'intrusive thoughts...' not in journal",
+          "item": {
+            "domain": "mind",
+            "text": "intrusive thoughts",
+            "evidence_span": "intrusive thoughts",
+            "polarity": "present",
+            "time_bucket": "today",
+            "intensity_bucket": "high",
+            "confidence": 0.55
+          }
+        },
+        {
+          "journal_id": "C009",
+          "error": "Hallucinated evidence_span: 'intrusive thoughts...' not in journal",
+          "item": {
+            "domain": "mind",
+            "text": "intrusive thoughts",
+            "evidence_span": "intrusive thoughts",
+            "polarity": "present",
+            "time_bucket": "today",
+            "intensity_bucket": "high",
+            "confidence": 0.55
+          }
+        },
+        {
+          "journal_id": "C014",
+          "error": "Hallucinated evidence_span: 'No cramps today...' not in journal",
+          "item": {
+            "domain": "symptom",
+            "text": "cramps",
+            "evidence_span": "No cramps today",
+            "polarity": "absent",
+            "time_bucket": "last_night",
+            "intensity_bucket": "unknown",
+            "confidence": 0.85
+          }
+        },
+        {
+          "journal_id": "C015",
+          "error": "Hallucinated evidence_span: 'intrusive thoughts...' not in journal",
+          "item": {
+            "domain": "mind",
+            "text": "intrusive thoughts",
+            "evidence_span": "intrusive thoughts",
+            "polarity": "present",
+            "time_bucket": "last_night",
+            "intensity_bucket": "high",
+            "confidence": 0.55
+          }
+        },
+        {
+          "journal_id": "C016",
+          "error": "Hallucinated evidence_span: 'intrusive thoughts...' not in journal",
+          "item": {
+            "domain": "mind",
+            "text": "intrusive thoughts",
+            "evidence_span": "intrusive thoughts",
+            "polarity": "present",
+            "time_bucket": "today",
+            "intensity_bucket": "high",
+            "confidence": 0.55
+          }
+        }
+      ]
+    },
+    "required_fields": {
+      "failures": 0,
+      "details": []
+    },
+    "contradictions": {
+      "failures": 1,
+      "details": [
+        {
+          "evidence_span": "No cramps today",
+          "polarities": [
+            "present",
+            "absent"
+          ],
+          "items": [
+            {
+              "domain": "symptom",
+              "text": "cramps",
+              "evidence_span": "No cramps today",
+              "polarity": "absent",
+              "time_bucket": "today",
+              "intensity_bucket": "unknown",
+              "confidence": 0.85
+            },
+            {
+              "domain": "symptom",
+              "text": "cramps",
+              "evidence_span": "No cramps today",
+              "polarity": "present",
+              "time_bucket": "today",
+              "intensity_bucket": "medium",
+              "confidence": 0.4
+            }
+          ],
+          "journal_id": "C016"
+        }
+      ]
+    }
+  },
+  "passed": false
+}

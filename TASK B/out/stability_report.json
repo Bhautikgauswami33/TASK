@@ -1,0 +1,14 @@
+{
+  "total_journals": 5,
+  "total_runs_analyzed": 15,
+  "aggregate_metrics": {
+    "mean_agreement_rate": 0.88,
+    "mean_polarity_flip_rate": 0.08,
+    "mean_bucket_drift_rate": 0.52,
+    "mean_recall_variance": 0.12
+  },
+  "risk_summary": {
+    "total_critical_risks": 1,
+    "total_high_risks": 1
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ashwam.ai/schemas/extraction-output.json",
+  "title": "Ashwam Journal Extraction Output",
+  "description": "Schema for validated semantic object extraction from journal entries",
+  "type": "object",
+  "required": ["journal_id", "items"],
+  "properties": {
+    "journal_id": {
+      "type": "string",
+      "description": "Unique identifier for the source journal entry",
+      "pattern": "^J[0-9]+$"
+    },
+    "items": {
+      "type": "array",
+      "description": "List of extracted semantic objects",
+      "items": {
+        "$ref": "#/definitions/SemanticObject"
+      }
+    }
+  },
+  "definitions": {
+    "SemanticObject": {
+      "type": "object",
+      "required": ["domain", "evidence_span", "polarity", "time_bucket"],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "enum": ["symptom", "food", "emotion", "mind"],
+          "description": "Semantic domain of the extracted item"
+        },
+        "text": {
+          "type": "string",
+          "description": "Optional free-form normalized description of the item"
+        },
+        "evidence_span": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact substring from the source journal text (MUST be verbatim)"
+        },
+        "polarity": {
+          "type": "string",
+          "enum": ["present", "absent", "uncertain"],
+          "description": "Whether the item is present, explicitly absent, or uncertain"
+        },
+        "intensity_bucket": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "unknown"],
+          "description": "Intensity level for symptom/food/mind domains"
+        },
+        "arousal_bucket": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "unknown"],
+          "description": "Arousal level for emotion domain"
+        },
+        "time_bucket": {
+          "type": "string",
+          "enum": ["today", "last_night", "past_week", "unknown"],
+          "description": "Temporal reference for when the item occurred"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Model confidence score for this extraction"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "domain": { "const": "emotion" } }
+          },
+          "then": {
+            "required": ["arousal_bucket"],
+            "properties": {
+              "arousal_bucket": {
+                "type": "string",
+                "enum": ["low", "medium", "high", "unknown"]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "domain": { "enum": ["symptom", "food", "mind"] } }
+          },
+          "then": {
+            "required": ["intensity_bucket"],
+            "properties": {
+              "intensity_bucket": {
+                "type": "string",
+                "enum": ["low", "medium", "high", "unknown"]
+              }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,51 @@
+{
+  "journal_id": "B001",
+  "run_id": "run3",
+  "items": [
+    {
+      "domain": "symptom",
+      "text": "eye-area headache",
+      "evidence_span": "dull headache behind my eyes",
+      "polarity": "present",
+      "intensity_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.61
+    },
+    {
+      "domain": "food",
+      "text": "chai with sugar",
+      "evidence_span": "masala chai with 2 tsp sugar",
+      "polarity": "present",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.83
+    },
+    {
+      "domain": "food",
+      "text": "rice/dal/achar lunch",
+      "evidence_span": "Lunch was rice + dal + achar",
+      "polarity": "present",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.77
+    },
+    {
+      "domain": "emotion",
+      "text": "edgy",
+      "evidence_span": "a bit edgy, snapping at people for no reason",
+      "polarity": "present",
+      "arousal_bucket": "medium",
+      "time_bucket": "today",
+      "confidence": 0.58
+    },
+    {
+      "domain": "mind",
+      "text": "scattered thoughts",
+      "evidence_span": "mind felt scattered—kept forgetting what I opened the laptop for",
+      "polarity": "present",
+      "intensity_bucket": "high",
+      "time_bucket": "today",
+      "confidence": 0.55
+    }
+  ]
+}

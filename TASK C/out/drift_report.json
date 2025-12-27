@@ -1,0 +1,88 @@
+{
+  "items_per_journal": {
+    "day0": {
+      "mean": 1.15,
+      "min": 0,
+      "max": 4,
+      "total": 23
+    },
+    "day1": {
+      "mean": 1.5,
+      "min": 0,
+      "max": 4,
+      "total": 30
+    },
+    "mean_change": 0.35
+  },
+  "domain_distribution": {
+    "day0": {
+      "symptom": 0.2174,
+      "food": 0.3043,
+      "emotion": 0.3478,
+      "mind": 0.1304
+    },
+    "day1": {
+      "symptom": 0.2,
+      "food": 0.2333,
+      "emotion": 0.2667,
+      "mind": 0.3
+    },
+    "shift": 0.1696
+  },
+  "polarity_distribution": {
+    "day0": {
+      "present": 0.8696,
+      "absent": 0.1304
+    },
+    "day1": {
+      "present": 0.9,
+      "absent": 0.1
+    },
+    "shift": 0.0304
+  },
+  "emotion_arousal_distribution": {
+    "day0": {
+      "low": 0.25,
+      "high": 0.5,
+      "medium": 0.25
+    },
+    "day1": {
+      "high": 1.0
+    },
+    "shift": 0.5
+  },
+  "time_bucket_distribution": {
+    "day0": {
+      "today": 1.0
+    },
+    "day1": {
+      "last_night": 0.2667,
+      "today": 0.7333
+    },
+    "shift": 0.2667
+  },
+  "alerts": [
+    {
+      "type": "DOMAIN_DRIFT",
+      "severity": "MEDIUM",
+      "message": "Domain distribution shifted by 16.96%",
+      "day0": {
+        "symptom": 0.2174,
+        "food": 0.3043,
+        "emotion": 0.3478,
+        "mind": 0.1304
+      },
+      "day1": {
+        "symptom": 0.2,
+        "food": 0.2333,
+        "emotion": 0.2667,
+        "mind": 0.3
+      }
+    },
+    {
+      "type": "AROUSAL_DRIFT",
+      "severity": "MEDIUM",
+      "message": "Emotion arousal distribution shifted by 50.00%"
+    }
+  ]
+}

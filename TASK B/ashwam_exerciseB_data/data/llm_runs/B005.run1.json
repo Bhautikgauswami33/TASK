@@ -1,0 +1,51 @@
+{
+  "journal_id": "B005",
+  "run_id": "run1",
+  "items": [
+    {
+      "domain": "food",
+      "text": "biryani + raita (small bowl)",
+      "evidence_span": "ate biryani (small bowl) + raita",
+      "polarity": "present",
+      "intensity_bucket": "unknown",
+      "time_bucket": "today",
+      "confidence": 0.92
+    },
+    {
+      "domain": "symptom",
+      "text": "heartburn after eating",
+      "evidence_span": "Felt heartburn after that",
+      "polarity": "present",
+      "intensity_bucket": "medium",
+      "time_bucket": "today",
+      "confidence": 0.74
+    },
+    {
+      "domain": "symptom",
+      "text": "slight nausea",
+      "evidence_span": "a slight nausea",
+      "polarity": "present",
+      "intensity_bucket": "low",
+      "time_bucket": "today",
+      "confidence": 0.61
+    },
+    {
+      "domain": "emotion",
+      "text": "irritated and impatient",
+      "evidence_span": "irritated + impatient",
+      "polarity": "present",
+      "arousal_bucket": "high",
+      "time_bucket": "today",
+      "confidence": 0.68
+    },
+    {
+      "domain": "mind",
+      "text": "racing thoughts at night",
+      "evidence_span": "racing thoughts at night",
+      "polarity": "present",
+      "intensity_bucket": "high",
+      "time_bucket": "last_night",
+      "confidence": 0.73
+    }
+  ]
+}

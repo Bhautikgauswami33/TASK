@@ -1,0 +1,14 @@
+{
+  "total_journals_evaluated": 2,
+  "object_precision": 1.0,
+  "object_recall": 0.8,
+  "object_f1": 0.8889,
+  "polarity_accuracy": 1.0,
+  "bucket_accuracy": 1.0,
+  "time_bucket_accuracy": 1.0,
+  "evidence_coverage_rate": 1.0,
+  "tp_count": 8,
+  "fp_count": 0,
+  "fn_count": 2,
+  "overlap_threshold": 0.5
+}
